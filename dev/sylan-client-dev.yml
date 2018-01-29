@@ -1,0 +1,17 @@
+name: client
+
+#==========================================#
+#=============== Log settings =============#
+#==========================================#
+logging:
+  config: classpath:config/logging-config.xml
+  file: ./logs/client.log
+
+#==========================================#
+#============ spring settings =============#
+#==========================================#
+server:
+  port: 8081
+spring:
+  freemarker:
+    checkTemplateLocation: false

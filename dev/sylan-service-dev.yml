@@ -1,0 +1,60 @@
+name: service
+
+#==========================================#
+#=============== Log settings =============#
+#==========================================#
+logging:
+  config: classpath:config/logging-config.xml
+  file: ./logs/service.log
+
+#==========================================#
+#============ spring settings =============#
+#==========================================#
+server:
+  port: 8089
+spring:
+  freemarker:
+    checkTemplateLocation: false
+#==========================================#
+#============ spring web   ================#
+#==========================================#
+  http:
+    multipart:
+      maxFileSize: 100Mb
+      maxRequestSize: 1000Mb
+
+#==========================================#
+#============ Database sttings ============#
+#==========================================#
+  datasource:
+    url: jdbc:mysql://db:3306/sylan?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: "00000000"
+    driver-class-name: com.mysql.jdbc.Driver
+    platform: mysql
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 1
+    minIdle: 3
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 30000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,slf4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+db:
+  mybatis:
+    mapperLocations: classpath*:config/mapper/**/*.xml
+    typeAliasesPackage: com.sylan.demo.cloud.app.interfaces
+    dbType: mysql
+
+#==========================================#
+#=========== file settings   ==============#
+#==========================================#
+file:
+  root: /Users/Gavin/Documents/tmp/upload
