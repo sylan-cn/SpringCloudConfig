@@ -6,6 +6,7 @@ name: client
 logging:
   config: classpath:config/logging-config.xml
   file: ./logs/client.log
+  level: debug
 
 #==========================================#
 #============ spring settings =============#
