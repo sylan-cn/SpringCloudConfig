@@ -1,4 +1,4 @@
-name: client FFF
+name: client GGG
 
 #==========================================#
 #=============== Log settings =============#
@@ -24,10 +24,3 @@ spring:
     port: 5672
     username: guest
     password: guest
-
-#==========================================#
-#============ security config   ===========#
-#==========================================#
-management:
-  security:
-     enabled: false
