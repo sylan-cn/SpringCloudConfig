@@ -1,4 +1,4 @@
-name: service III
+name: service JJJ
 
 #==========================================#
 #=============== Log settings =============#
@@ -62,13 +62,6 @@ db:
     mapperLocations: classpath*:config/mapper/**/*.xml
     typeAliasesPackage: com.sylan.demo.cloud.app.interfaces
     dbType: mysql
-
-#==========================================#
-#============ security config   ===========#
-#==========================================#
-management:
-  security:
-     enabled: false
 
 #==========================================#
 #=========== file settings   ==============#
