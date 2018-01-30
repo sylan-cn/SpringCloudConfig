@@ -1,24 +1,5 @@
 #==========================================#
-#=============== Log settings =============#
-#==========================================#
-logging:
-  config: classpath:config/logging-config.xml
-  file: ./logs/client.log
-
-#==========================================#
 #============ spring settings =============#
 #==========================================#
 server:
   port: 8081
-spring:
-  freemarker:
-    checkTemplateLocation: false
-
-#==========================================#
-#============== MQ client   ===============#
-#==========================================#
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest

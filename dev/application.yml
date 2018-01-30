@@ -1,4 +1,11 @@
 #==========================================#
+#=============== Log settings =============#
+#==========================================#
+logging:
+  config: classpath:config/logging-config.xml
+  file: ./logs/${spring.application.name}.log
+
+#==========================================#
 #=============== Hystrix settings =========#
 #==========================================#
 hystrix:
@@ -36,8 +43,31 @@ ribbon:
 #      user-info-uri: http://auth-service:5000/uaa/users/current
 
 #==========================================#
-#============= MQ settings   ==============#
+#=========== file settings   ==============#
 #==========================================#
-#spring:
-#  rabbitmq:
-#    host: rabbitmq
+file:
+  root: /Users/Gavin/Documents/tmp/upload
+
+#==========================================#
+#=========== Spring settings   ============#
+#==========================================#
+spring:
+  freemarker:
+    checkTemplateLocation: false
+
+#==========================================#
+#============ spring web   ================#
+#==========================================#
+  http:
+    multipart:
+      maxFileSize: 100Mb
+      maxRequestSize: 1000Mb
+
+#==========================================#
+#============== MQ client   ===============#
+#==========================================#
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest

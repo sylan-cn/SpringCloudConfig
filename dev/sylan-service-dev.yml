@@ -1,35 +1,9 @@
 #==========================================#
-#=============== Log settings =============#
-#==========================================#
-logging:
-  config: classpath:config/logging-config.xml
-  file: ./logs/service.log
-
-#==========================================#
 #============ spring settings =============#
 #==========================================#
 server:
   port: 8089
 spring:
-  freemarker:
-    checkTemplateLocation: false
-
-#==========================================#
-#============== MQ client   ===============#
-#==========================================#
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
-
-#==========================================#
-#============ spring web   ================#
-#==========================================#
-  http:
-    multipart:
-      maxFileSize: 100Mb
-      maxRequestSize: 1000Mb
 
 #==========================================#
 #============ Database sttings ============#
@@ -60,9 +34,3 @@ db:
     mapperLocations: classpath*:config/mapper/**/*.xml
     typeAliasesPackage: com.sylan.demo.cloud.app.interfaces
     dbType: mysql
-
-#==========================================#
-#=========== file settings   ==============#
-#==========================================#
-file:
-  root: /Users/Gavin/Documents/tmp/upload
