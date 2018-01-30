@@ -1,4 +1,4 @@
-name: service FFF
+name: service GGG
 
 #==========================================#
 #=============== Log settings =============#
@@ -6,7 +6,6 @@ name: service FFF
 logging:
   config: classpath:config/logging-config.xml
   file: ./logs/service.log
-  level: debug
 
 #==========================================#
 #============ spring settings =============#
