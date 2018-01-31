@@ -14,12 +14,12 @@ zuul:
     socket-timeout-millis: 20000
   routes:
     auth:
-      path: /auth/**
+      path: /oauth/**
       serviceId: sylan-auth
       stripPrefix: false
       sensitiveHeaders:
     config:
       path: /accounts/**
-      serviceId: account-service
+      serviceId: sylan-config
       stripPrefix: false
       sensitiveHeaders:
