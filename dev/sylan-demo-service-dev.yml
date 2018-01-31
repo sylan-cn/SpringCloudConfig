@@ -35,3 +35,11 @@ db:
     mapperLocations: classpath*:config/mapper/**/*.xml
     typeAliasesPackage: com.sylan.demo.cloud.app.interfaces
     dbType: mysql
+
+#==========================================#
+#========== Security settings   ===========#
+#==========================================#
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://127.0.0.1:8080/auth/users/current
