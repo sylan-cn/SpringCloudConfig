@@ -1,12 +1,12 @@
 #==========================================#
-#=============== Log settings =============#
+#============= Log settings ===============#
 #==========================================#
 logging:
   config: classpath:config/logging-config.xml
   file: ./logs/${spring.application.name}.log
 
 #==========================================#
-#=============== Hystrix settings =========#
+#============ Hystrix settings ============#
 #==========================================#
 hystrix:
   command:
