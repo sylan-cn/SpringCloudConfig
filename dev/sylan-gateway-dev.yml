@@ -14,7 +14,7 @@ zuul:
     socket-timeout-millis: 20000
   routes:
     auth:
-      path: /**
+      path: /auth/**
       serviceId: sylan-auth
       stripPrefix: false
       sensitiveHeaders:
