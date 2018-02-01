@@ -11,15 +11,3 @@ server:
 management:
   security:
     enabled: false
-
-#==========================================#
-#======== oauth2 resource client   ========#
-#==========================================#
-security:
-  oauth2:
-    client:
-      clientId: client-server
-      clientSecret: ${SYLAN_SERVICE_PASSWORD}
-      accessTokenUri: http://127.0.0.1:8080/auth/oauth/token
-      grant-type: client_credentials
-      scope: server
