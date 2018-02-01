@@ -8,10 +8,15 @@ logging:
 #==========================================#
 #============ Hystrix settings ============#
 #==========================================#
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000
 hystrix:
   command:
     default:
       execution:
+        timeout:
+	  enabled: false
         isolation:
           thread:
             timeoutInMilliseconds: 30000
