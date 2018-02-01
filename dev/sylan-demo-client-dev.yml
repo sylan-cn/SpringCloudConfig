@@ -5,7 +5,16 @@ server:
   port: 8081
   context-path: /client
 
+#==========================================#
+#========== security settings   ===========#
+#==========================================#
+management:
+  security:
+    enabled: false
 
+#==========================================#
+#======== oauth2 resource client   ========#
+#==========================================#
 security:
   oauth2:
     client:
