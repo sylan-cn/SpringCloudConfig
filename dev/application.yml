@@ -47,8 +47,6 @@ security:
 #==========================================#
 #======== oauth2 resource client   ========#
 #==========================================#
-security:
-  oauth2:
     client:
       clientId: client-server
       clientSecret: ${SYLAN_SERVICE_PASSWORD}
