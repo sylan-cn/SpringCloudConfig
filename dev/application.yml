@@ -8,9 +8,6 @@ logging:
 #==========================================#
 #============ Hystrix settings ============#
 #==========================================#
-ribbon:
-  ReadTimeout: 30000
-  ConnectTimeout: 30000
 hystrix:
   command:
     default:
@@ -40,6 +37,8 @@ endpoints:
     sensitive: false
 ribbon:
   ServerListRefreshInterval: 5000
+  ReadTimeout: 30000
+  ConnectTimeout: 30000
 
 #==========================================#
 #======== oauth2 resource server   ========#
