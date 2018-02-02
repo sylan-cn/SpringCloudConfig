@@ -4,11 +4,8 @@
 server:
   port: 5050
   context-path: /auth
-
+  session:
+    timeout: 60
 #==========================================#
 #============ security settings ===========#
 #==========================================#
-#security:
-#  oauth2:
-#    resource:
-#      filter-order: 3
